@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Unique Path and Shareable Resume by Nimra Ulfat</h1>
+    <form id="resumeForm">
+        <fieldset>
+            <legend><h2><b>Personal Information</b></h2></legend>
+            <label for="name"><h3>Name:</h3></label>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="email"><h3>Email:</h3></label>
+            <input type="email" id="email" name="email" required><br>
+            
+            <label for="phone"><h3>Phone:</h3></label>
+            <input type="tel" id="phone" name="phone" required><br>
+
+            <label for="address"><h3>Address:</h3></label>
+            <input type="text" id="address" name="address" required><br>
+        </fieldset>
+
+        <fieldset>
+            <legend><h2><b>Profile Picture</b></h2></legend>
+            <label for="profilePicture"><h3>Upload Profile Picture:</h3></label>
+            <input type="file" id="profilePicture" name="profilePicture" accept="image/*"><br>
+        </fieldset>
+
+        <fieldset>
+            <legend><h2><b>Education</b></h2></legend>
+            <label for="education"><h3>Education:</h3></label>
+            <textarea id="education" name="education" rows="4" required placeholder="Enter your educational qualifications"></textarea><br>
+        </fieldset>
+
+        <fieldset>
+            <legend><h2><b>Expertise</b></h2></legend>
+            <label for="expertise"><h3>Expertise:</h3></label>
+            <textarea id="expertise" name="expertise" rows="4" required placeholder="Enter details about your professional expertise"></textarea><br>
+        </fieldset>
+
+        <fieldset>
+            <legend><h2><b>Experience</b></h2></legend>
+            <label for="experience"><h3>Experience:</h3></label>
+            <textarea id="experience" name="experience" rows="4" required placeholder="Enter your work experience"></textarea><br>
+        </fieldset>
+
+        <fieldset>
+            <legend><h2><b>Skills</b></h2></legend>
+            <label for="skills"><h3>Skills:</h3></label>
+            <textarea id="skills" name="skills" rows="4" required placeholder="Enter your Skills"></textarea><br>
+        </fieldset>
+
+        <fieldset>
+            <legend><h2><b>Computer Skills</b></h2></legend>
+            <label for="computerSkills"><h3>Computer Skills:</h3></label>
+            <textarea id="computerSkills" name="computerSkills" rows="4" required placeholder="Enter your technical and soft skills"></textarea><br>
+        </fieldset>
+
+        <button type="submit"><h4>Generate Resume Below</h4></button>
+    </form>
+
+    <div id="resumeOutput">
+        <!-- Generated resume will be displayed here -->
+    </div>
+
+    <div id="shareableLink"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
